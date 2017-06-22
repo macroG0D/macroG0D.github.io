@@ -29,8 +29,9 @@ html, body
 	height: 100%
 
 body
-	background-image: url(/img/bg.png)
+	background-image: url(/img/bg.jpeg)
 	background-size: cover
+	min-height: 950px
 	background-color: $accent
 	background-attachment: fixed
 	font-size: 16px
@@ -126,7 +127,7 @@ header
 		color: lighten($accent, 30%)
 	&:active
 		background-color: darken($milk, 50%)
-		color: darken($accent, 30%)
+		color: $milk
 		box-shadow: none
 .delBtn
 	font-size: 1.2em
