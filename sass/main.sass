@@ -1,0 +1,163 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	background-image: url(/img/bg.png)
+	background-size: cover
+	background-color: $accent
+	background-attachment: fixed
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+	padding-top: 20px
+	background-color: rgba(9,9,9,.73)
+	.logoWrapper
+		img
+			width: 100px
+	h1
+		opacity: .7
+		margin: 15px
+		text-align: center
+		font-size: 3em
+		font-weight: lighter
+		color: #fff
+
+	margin-bottom: 3%
+
+.firstScreen
+
+
+.simpleCalc
+	text-align: center
+	box-shadow: 0 0 10px rgba(255,255,255,.3)
+	padding: 20px
+	background-color: $smoke
+	margin: auto
+	width: 370px
+	height: 521px
+	border-radius: 60px
+	border: #000
+	img
+		height: 42px
+.scoreboard
+	font-family: "Cambria",sans-serif
+	text-align: right
+	margin-top: 15px
+	width: 315px
+	height: 80.5px
+	background-color: $milk
+	border-radius: 10px
+	margin-bottom: 25px
+	margin-left: auto
+	margin-right: auto
+	.desk
+		width: 280px
+		margin: auto
+		height: 45%
+		font-size: 1.18em
+		letter-spacing: 2px
+		color: $whiteSmoke
+		overflow: hidden
+	.calcIn
+		margin-top: -10px
+		margin-left: 20px
+		text-align: right
+		width: 280px
+		font-size: 2.5em
+		overflow: hidden
+.button
+	background-color: $milk
+	margin-right: 8px
+	margin-left: 9px
+	border-radius: 1000px
+	border: 2px solid #000
+	margin-top: 14px
+	width: 47px
+	height: 47px
+	display: inline-block
+	position: relative
+	color: $accent
+	font-family: "Cambria", sans-serif
+	font-size: 1.575em
+	box-shadow: 0 0 10px rgba(0,0,0,.9)
+	transition: all .15s ease
+	&:hover
+		background-color: #fff
+		color: lighten($accent, 30%)
+	&:active
+		background-color: darken($milk, 50%)
+		color: darken($accent, 30%)
+		box-shadow: none
+.delBtn
+	font-size: 1.2em
+
+.bigButtonC
+	height: 112px
+	top: -15px
+.bigButtonPlus
+	height: 112px
+	top: -68px
+.topBtn
+	top: -47px
+.secLineBtn
+	left: 32px
+	top: -76px
+.thirdLineBtn
+	top: -72px
+.fourthLineBtn
+	top: -100px
+.bottomLineBtn
+	top: -129px
+	left: -30px
+
+
+
+
+
+
+
+
+		
+
+
+@import "media" // Всегда в конце
