@@ -1,0 +1,145 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+
+body
+
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background: url("/img/bg.jpg") no-repeat center center fixed
+	background-size: cover
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+p
+	font-size: 2em
+	color: $accent
+	font-family: swCrowl, sans-serif
+
+h1
+	text-align: center
+	color: $accent
+	font-family: StarWars, sans-serif
+.intro
+	text-align: center
+	color: #00d2ff
+	font-size: 3.125em
+	font-family: StarWars, sans-serif
+.intro2
+	text-align: center
+	font-size: 1.875em
+	font-family: StarWars, sans-serif
+.defaultP
+	font-family: StarWars, sans-serif
+	color: $accent
+.storyBoard
+	border: 2px solid #f0ff00
+	background-color: #000
+	margin: 3% 5% 0
+	height: 80%
+	padding: 0 20px
+	opacity: .95
+	overflow: auto
+.storyBoard
+	scrollbar-face-color: #FFFFFF
+	scrollbar-shadow-color: #FFFFFF
+	scrollbar-highlight-color: #FFFFFF
+	scrollbar-3dlight-color: #FFFFFF
+	scrollbar-darkshadow-color: #FFFFFF
+	scrollbar-track-color: #FFFFFF
+	scrollbar-arrow-color: #FFFFFF
+	&::-webkit-scrollbar
+		width: 12px
+	&::-webkit-scrollbar-track
+		border-radius: 10px
+	&::-webkit-scrollbar-thumb
+		border-radius: 10px
+		background: rgba(255, 0, 0, 0.8)
+.input-wrap
+	width: 100%
+	position: relative
+	font-family: StarWars, sans-serif
+.myInput
+	border: 3px solid #adae32
+	background-color: #000
+	margin: 0 5%
+	width: 90%
+	padding: 0 150px 0 20px
+	font-size: 2.5em
+	color: #fff
+	transition: all .25s ease
+	opacity: .90
+	&:hover
+		border: 3px solid lighten(#adae32, 20%)
+	&:focus
+		border: 3px solid lighten(#adae32, 30%)
+.btn
+	position: absolute
+	top: 0
+	right: 5%
+	background-color: #000
+	width: 10%
+	height: 100%
+	border: 3px solid #adae32
+	font-size: 2em
+	transition: all .25s ease
+	&:hover
+		border: 3px solid #fff
+		color: #adae32
+
+p span
+	color: #323232
+
+h3
+	color: red
+
+.test
+	size: 5em
+
+#aud
+	opacity: .2
+	border: 3px solid #adae32
+	background-color: #000
+	margin: 5%
+
+
+
+	
+
+
+@import "media" // Всегда в конце
