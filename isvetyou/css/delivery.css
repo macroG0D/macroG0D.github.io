@@ -1,0 +1,135 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+p {
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.flex-container {
+	display: box;
+	display: flex;
+}
+
+.del_adv .item p {
+	text-align: center;
+	font-size: 14px;
+	width: 370px;
+}
+
+.del_adv .item {
+	display: inline-block;
+	width: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+.del_adv h2 {
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+.del_adv .item .icon {
+	width: 98px;
+	height: 98px;
+	border-radius: 1000px;
+	border: dotted 3px #27bfc1;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: auto;
+}
+
+.del_adv .item .icon img{
+	height: 79px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+
+hr {
+	margin-top: 40px;
+	color: #f5f5f5;
+	opacity: .2;
+}
+
+.del_price p {
+	margin-top: 30px;
+}
+
+.del_price .price_city h3 {
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	
+}
+
+.del_price ul li {
+	font-size: 14px;
+	color: #353535;
+	margin: 10px;
+}
+
+ul {
+    list-style-image: url('../img/check.png');
+}
+
+.del_brands {
+	text-align: center;
+}
+
+.del_brands .item {
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+.del_brands .logo_brand img {
+	max-width: 136px;
+	max-height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.del_brands .logo_brand {
+	width: 173px;
+	height: 94px;
+	border: dotted 2px #e4e4e4;
+	opacity: .8;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: auto;
+	position: relative;
+	transition: .25s ease;
+}
+
+.del_brands .logo_brand:hover {
+	opacity: 1;
+	border: dotted 2px #27bfc1;
+}
+
+
+.notation {
+	width: 1000px;
+}
+.notation a {
+	border-bottom: dashed 1px #27bfc1;
+	
+}
