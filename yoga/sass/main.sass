@@ -1,0 +1,415 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+@import "app/libs/font-awsome/css/font-awesome.sass"
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: roboto-light, sans-serif
+	overflow-x: hidden
+	opacity: 1
+	color: #050505
+
+a
+	+mt(.25s)
+	color: #050505
+	border-bottom: 1px solid transparent
+	&:hover, &:focus
+		text-decoration: none
+		color: #050505
+
+h1
+	text-transform: uppercase
+	font-family: roboto-bold, sans-serif
+	font-size: 76px
+	line-height: 90px
+
+h2
+	text-transform: uppercase
+	font-family: roboto-medium, sans-serif
+	font-size: 36px
+h3
+	font-family: roboto-thin, sans-serif
+	font-weight: 100
+	font-size: 24px
+	color: #050505
+	line-height: 36px
+
+p
+	font-family: roboto-light,sans-serif
+	font-size: 16px
+	line-height: 24px
+	margin-top: 0
+	padding: 5px 0 0 0
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.first_screen
+	background-image: url("../img/bg_1.png")
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100%
+	height: 743px
+	padding: 50px 0
+	.logo_img
+		margin: -4px 0
+		img
+			width: 105px
+	.callback_1, .callback_sm
+		text-align: center
+		font-family: roboto-regular, sans-serif
+		font-size: 13px
+		img
+			padding: 0 7px
+		a
+			span
+				+mt(.25s)
+				border-bottom: 1px solid transparent
+				&:hover
+					border-bottom: 1px solid #050505
+	nav
+		ul
+			font-family: roboto-regular,sans-serif
+			font-size: 12px
+			text-transform: uppercase
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				margin: 0 20px
+		a
+			&:hover
+				border-bottom: 1px solid #050505
+.toggle-mnu 
+	position: absolute
+	display: block
+	width: 45px
+	height: 28px
+	margin-top: 0
+	float: right
+	right: 0
+	margin-right: 50px
+
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #000
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+.uto
+	h1
+		margin: 165px 0 0 0
+	h2
+		margin-top: 0px
+		margin-bottom: 0
+	h3
+		margin: 0px 0
+		width: 520px
+		font-family: roboto-light,sans-serif
+
+.main_img
+	img
+		margin-top: 40px
+.mail_vertical
+	writing-mode: vertical-lr
+	transform: rotate(180deg)
+	position: relative
+	margin-top: 200px
+	display: inline-block
+	margin-left: 55px
+	font-family: roboto-regular,sans-serif
+	font-size: 14px
+	border-left: 1px solid transparent
+	+mt(.25s)
+	&:hover
+		border-left: 1px solid black
+
+.icons_vertical
+	display: block
+	writing-mode: vertical-lr
+	margin-top: 35px
+	margin-left: 40px
+	a
+		padding: 5px
+.rectangle
+	display: block
+
+	.gray_rectangle
+		height: 115px
+		background-color: #b2aeab
+		position: absolute
+		top: 670px
+		width: 1450px
+		right: 0
+		z-index: 150
+
+.quote_wrap
+	position: relative
+	margin-top: 23px
+	margin-left: 40px
+	background-color: #eaeaea
+	
+
+	p
+		width: 1100px
+		padding: 30px 50px
+		margin: 0
+		font-family: roboto-lightItalic,sans-serif
+		font-size: 18px
+
+.about
+	position: relative
+	margin-top: 90px
+	.blue_frame
+		border: 1px solid #7faec2
+		position: absolute
+		height: 620px
+		width: 620px
+		margin-top: 70px
+		left: -310px
+		z-index: 0
+		.blue_square
+			width: 45px
+			height: 45px
+			background-color: #829fc0
+			position: relative
+			margin-left: 55%
+			margin-top: 96%
+
+	.black_frame
+		border: 1px solid #6b645e
+		position: absolute
+		height: 637px
+		width: 59vw
+		margin-top: 135px
+		left: -205px
+		z-index: 1
+	.bg_frame
+		border: 1px solid #aab4af
+		border-right: none
+		position: absolute
+		height: 1382px
+		width: 139px
+		margin-top: 425px
+		right: 0px
+		.big_square
+			width: 100px
+			height: 100px
+			background-color: #b2aeab
+			position: relative
+			margin-left: -50px
+			margin-top: 1140px
+		.small_square
+			width: 45px
+			height: 45px
+			background-color: #aab4ae
+			position: relative
+			margin-left: -80px
+			margin-top: 27px
+	.page_num
+		writing-mode: vertical-lr
+		transform: rotate(180deg)
+		font-family: roboto-thin, sans-serif
+		font-size: 33px
+		opacity: .5
+		margin-top: 0
+		padding-top: 0
+		position: absolute
+		left: 0
+
+	.img_slider
+		position: relative
+		margin-top: 100px
+		width: 573px
+		height: 697px
+		overflow: hidden
+
+	.fade
+	  -webkit-animation-name: fade
+	  -webkit-animation-duration: 1s
+	  animation-name: fade
+	  animation-duration: .25s
+
+	@-webkit-keyframes fade
+	  0%
+	    opacity: 0
+	  100%
+	    opacity: 1
+	@keyframes fade
+	  0%
+	    opacity: 0
+
+	  100%
+	    opacity: 1
+	
+			
+	.about_text_wrap
+		margin-top: 80px
+		margin-left: 20px
+
+	.slider_btns
+		margin-top: 40px
+
+		.btn_prev
+			position: absolute
+			left: 20px
+			margin-left: 20px
+			width: 34px
+			height: 34px
+			background-color: #6b645e
+			color: #fff
+			line-height: 34px
+			text-align: center
+		.btn_next
+			position: absolute
+			left: 80px
+			width: 34px
+			height: 34px
+			background-color: #6b645e
+			color: #fff
+			line-height: 34px
+			text-align: center
+		.btn_prev, .btn_next
+			+mt(.25s)
+			&:hover
+				background-color: darken(#6b645e, 15%)
+				cursor: pointer
+			&:active
+				background-color: darken(#6b645e, 30%)
+				
+			
+
+	.bg_rectangle_green
+		background-color: #aab4af
+		position: absolute
+		height: 223px
+		width: 800px
+		margin-top: 140px
+		right: 0px
+		z-index: 0
+	.black_frame_2
+		border: 1px solid #6b645e
+		border-right: none
+		position: absolute
+		height: 354px
+		width: 815px
+		margin-top: 200px
+		right: 0px
+		z-index: 2
+	.bg_rectangle_blue
+		margin-top: 20px
+		background-color: #7faec2
+		width: 755px
+		height: 376px
+		position: absolute
+		left: 0
+		z-index: 0
+	.black_frame_3
+		border: 1px solid #6b645e
+		border-left: none
+		position: absolute
+		height: 420px
+		width: 755px
+		margin-top: 80px
+		left: 0px
+		z-index: 10
+		
+
+	.page_num_2
+		position: absolute
+		writing-mode: vertical-lr
+		transform: rotate(180deg)
+		font-family: roboto-thin, sans-serif
+		font-size: 33px
+		opacity: .5
+		margin-top: 100px
+		left: 600px
+	h2
+		margin-top: 100px
+		margin-bottom: 40px
+	
+	
+	
+
+	.img_wrap
+		position: absolute
+		margin-top: 170px
+		right: -0px
+		z-index: 1
+
+	.img_wrap_2
+		position: relative
+		margin-top: 50px
+		z-index: 2
+	.about_3
+		.p_wrap
+			margin-top: 60px
+
+
+@import "media" // Всегда в конце
