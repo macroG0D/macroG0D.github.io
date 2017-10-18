@@ -72,6 +72,49 @@ h3
 	font-size: 24px
 	color: #050505
 	line-height: 36px
+.btn_more_dark
+	margin: auto
+	text-align: center
+	font-family: roboto-medium, sans-serif
+	text-transform: uppercase
+	font-size: 14px
+	color: #000	
+	background-color: transparent
+	border: 1px solid #000
+	padding: 15px 30px
+	border-radius: 4px
+	+mt(.25s)
+	&:hover
+		background-color: #d88815
+		color: #fff
+		border: 1px solid transparent
+	&:focus, &:active
+		background-color: darken(#d88815, 5%)
+		color: #fff
+		border: 1px solid transparent
+
+.btn_accent
+	background-color: #d88815
+	height: 45px
+	border-radius: 4px
+	border: none
+	color: #fff
+	text-transform: uppercase
+	font-family: roboto-medium,sans-serif
+	font-size: 16px
+	padding: 10px 10px
+	padding-bottom: 10px
+	display: block
+	min-width: 200px
+	+mt(.25s)
+	&:hover
+		background-color: darken(#d88815, 3%)
+		color: #fff
+	&:focus, &:active
+		background-color: darken(#d88815, 5%)
+		color: #fff
+		border: 1px solid transparent
+
 
 p
 	font-family: roboto-light,sans-serif
@@ -83,6 +126,13 @@ p
 	display: block
 	max-width: 100%
 	height: auto
+.page_num
+	writing-mode: vertical-lr
+	transform: rotate(180deg)
+	font-family: roboto-thin, sans-serif
+	font-size: 33px
+	opacity: .5
+	position: absolute
 
 .first_screen
 	background-image: url("../img/bg_1.png")
@@ -117,7 +167,7 @@ p
 			padding: 0
 			li
 				display: inline-block
-				margin: 0 20px
+				margin: 0 15px
 		a
 			&:hover
 				border-bottom: 1px solid #050505
@@ -291,22 +341,22 @@ p
 		overflow: hidden
 
 	.fade
-	  -webkit-animation-name: fade
-	  -webkit-animation-duration: 1s
-	  animation-name: fade
-	  animation-duration: .25s
+		-webkit-animation-name: fade
+		-webkit-animation-duration: 1s
+		animation-name: fade
+		animation-duration: .25s
 
 	@-webkit-keyframes fade
-	  0%
-	    opacity: 0
-	  100%
-	    opacity: 1
+		0%
+			opacity: 0
+		100%
+			opacity: 1
 	@keyframes fade
-	  0%
-	    opacity: 0
+		0%
+			opacity: 0
 
-	  100%
-	    opacity: 1
+		100%
+			opacity: 1
 	
 			
 	.about_text_wrap
@@ -410,6 +460,762 @@ p
 	.about_3
 		.p_wrap
 			margin-top: 60px
+
+.sect_3
+	margin-top: 60px
+	background-image: url("../img/sect_3/sect_3_bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	.page_num_3
+		top: 105px
+		writing-mode: vertical-lr
+		transform: rotate(180deg)
+		font-family: roboto-thin, sans-serif
+		font-size: 33px
+		opacity: .5
+		position: absolute
+		left: 0
+	h2
+		text-align: right
+		margin-top: 90px
+		margin-right: 50px
+	.big_gray_div
+		position: absolute
+		width: 81vw
+		height: 575px
+		margin-top: 184px
+		right: 0
+		background-color: #b2aeab
+
+	.black_frame_4
+		border: 1px solid #6b645e
+		position: absolute
+		height: 700px
+		width: 73vw
+		margin-top: 276px
+		right: 10vw
+		z-index: 0
+
+	.format_items
+		h3
+			text-align: center
+			font-family: roboto-regular,sans-serif
+			font-size: 20px
+			margin: 0 20px 15px
+			line-height: 25px
+		.format_item
+			min-height: 730px
+			background-color: #fff
+			padding: 30px
+			padding-top: 20px
+			margin-top: 30px
+			.price
+				position: absolute
+				bottom: 30px
+				span
+					font-family: roboto-light,sans-serif
+					font-size: 13px
+					margin-left: 10px
+	.price_addition
+		p
+			margin-top: 50px
+			margin-left: 15px
+
+		h4
+			text-align: center
+			font-family: roboto-light,sans-serif
+			font-size: 25px
+			margin-bottom: 20px
+			margin-top: 10px
+	a
+	.btn_accent
+		margin: auto
+		margin-bottom: 50px
+		display: block
+		text-align: center
+		width: 80px
+
+.sect_4
+	margin-top: 60px
+	position: relative
+	h2
+		padding-right: 30px
+		margin-bottom: 40px
+	.page_num
+		right: 50px
+		top: 45px
+	.black_frame_5
+		position: absolute
+		right: 0
+		top: -170px
+		width: 130px
+		height: 750px
+		border: 1px solid #000
+		border-right: none
+	.black_frame_6
+		z-index: -1
+		position: absolute
+		border: 1px solid #000
+		border-left: none
+		width: 435px
+		height: 700px
+		left: 0
+		top: 340px
+	.gray_cube
+		position: absolute
+		transform: rotate(45deg)
+		top: 630px
+		right: 90px
+		width: 100px
+		height: 100px
+		background-color: #b2aeab
+	.green_cube
+		position: absolute
+		width: 45px
+		height: 45px
+		background-color: #aab4ae
+		top: 760px
+		right: 70px
+	
+	.sect4_items
+		margin-top: 30px
+		.sect4_green
+			border: 1px solid #aab4ae
+			margin-top: -30px
+			.bg_icon
+				background-color: #aab4ae
+		.sect4_blue
+			border: 1px solid #7faec2
+			margin-top: 30px
+			.bg_icon
+				background-color: #7faec2
+		.sect4_item
+			position: relative
+
+			height: 180px
+			.bg_icon
+				width: 180px
+				height: 180px
+				position: relative
+				float: left
+				margin-right: 30px
+				img
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			h4
+				font-family: roboto-light,sans-serif
+				font-size: 22px
+				padding: 0
+				margin-top: 15px
+				margin-bottom: 5px
+			p
+				padding-right: 20px
+
+.sect_5
+	margin-top: 60px
+	background-color: #b2aeab
+	z-index: 0
+	position: relative
+	.page_num
+		color: #fff
+		left: 0
+		top: 100px
+		opacity: .9
+	h2
+		color: #fff
+		margin-top: 80px
+		text-align: right
+	.black_frame_7
+		position: absolute
+		left: 0
+		top: 150px
+		border: 1px solid #000
+		opacity: .4
+		border-left: none
+		width: 88vw
+		height: 480px
+		z-index: 0
+	.white_rectangle
+		position: absolute
+		left: 0
+		top: 250px
+		width: 86vw
+		height: 470px
+		background-color: #eaeaea
+		z-index: -1
+	
+	.video_container
+		z-index: 100
+		.video_item
+			margin-bottom: 10px
+			.youtube
+				position: relative
+				padding-top: 56.15%
+				overflow: hidden
+				cursor: pointer
+				background-color: #fff
+
+				img
+					+mt(.25s)
+					width: 100%
+					top: -16.82%
+					left: 0
+					opacity: 1
+					height: 135%
+					&:hover	
+						opacity: .9
+						transform: scale(1.05)
+				//.play-button
+					//width: 90px
+					//height: 60px
+					//background-color: #333
+					//box-shadow: 0 0 30px rgba(0, 0, 0, 0.6)
+					//z-index: 1
+					//opacity: 0.8
+					//border-radius: 6px
+					//&:before
+					 //content: ""
+					 //border-style: solid
+					 //border-width: 15px 0 15px 26.0px
+					 //border-color: transparent transparent transparent #fff
+				//img, .play-button
+					//cursor: pointer
+				img, iframe
+				 position: absolute
+				//.play-button
+					//position: absolute
+					&:before
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate3d(-50%, -50%, 0)
+					top: 50%
+					left: 50%
+					transform: translate3d(-50%, -50%, 0)		
+
+				iframe
+					height: 100%
+					width: 100%
+					top: 0
+					left: 0
+
+			h3
+				margin-top: 10px
+				font-size: 16px
+				font-family: roboto-light,sans-serif
+				text-align: center
+				color: #2c2b2e
+
+	.btn_more
+		display: block
+		width: 200px
+		margin: auto
+		text-align: center
+		margin-top: 40px
+		margin-bottom: 100px
+		font-family: roboto-light, sans-serif
+		font-weight: bold
+		text-transform: uppercase
+		font-size: 14px
+		color: #fff	
+		background-color: transparent
+		border: 1px solid #fff
+		padding: 15px 30px
+		border-radius: 4px
+		+mt(.25s)
+		&:hover
+			border-color: darken(#fff, 60%)
+		&:focus
+			border-color: darken(#fff, 100%)
+
+
+.sect_6
+	background-image: url("../img/sect_6/bg_6.jpg")
+	position: relative
+	z-index: -2
+	.blue_square
+		position: absolute
+		top: 70px
+		width: 100px
+		height: 100px
+		background-color: #8bb9cc
+		right: 26vw
+	.black_square
+		position: absolute
+		top: 150px
+		width: 60px
+		height: 60px
+		background-color: #000
+		right: 25vw
+	.black_frame_8
+		position: absolute
+		left: 0
+		top: 100px
+		border: 1px solid #000
+		border-left: none
+		width: 180px
+		height: 450px
+	.black_frame_9
+		position: absolute
+		border: 1px solid #000
+		border-right: none
+		right: 0
+		top: 185px
+		width: 160px
+		height: 450px
+	.black_frame_10
+		position: absolute
+		right: 0
+		top: 380px
+		border: 1px solid #000
+		border-right: none
+		width: 220px
+		height: 890px
+
+	.bg_brush
+		position: absolute
+		top: 96px
+		left: 50%;
+		transform: translateX(-50%)
+		z-index: -1
+
+	h2
+		text-align: center
+		margin-top: 100px
+		z-index: 100
+
+	h4
+		font-family: roboto-light,sans-serif
+		font-size: 20px
+		margin: 30px 0 15px 0
+	.btn_more_dark
+		height: 50px		
+		width: 190px
+		display: inline-block
+		font-size: 14px
+		padding: 15px 0
+		margin: 20px 30px
+	.btn_accent
+		height: 50px
+		width: 190px
+		padding: 15px
+		border: 1px solid transparent
+		text-align: center
+		display: inline-block	
+		font-size: 14px
+	.second_pic
+		margin-bottom: 50px
+	.no_paddings
+		margin: 0
+		padding: 0
+
+
+.sect_contacts
+	position: relative
+	.black_frame_11
+		position: absolute
+		border: 1px solid #000
+		height: 380px
+		width: 657px
+		top: 225px
+		left: 0
+		border-left: none
+		z-index: 0
+	.green_rectangle
+		position: absolute
+		top: 164px
+		width: 718px
+		height: 307px
+		background-color: #aab4ae
+		left: 0
+		z-index: -1
+	.big_square
+		position: absolute
+		transform: rotate(45deg)
+		height: 100px
+		width: 100px
+		background-color: #b2aeab
+		top: 400px
+		right: 130px
+	.small_square
+		position: absolute
+		height: 60px
+		width: 60px
+		background-color: #8bb9cc
+		top: 530px
+		right: 250px
+	h2
+		margin-top: 80px
+		margin-bottom: 0
+		text-align: center
+	.img_wrapper
+		z-index: -1
+		padding: 0
+		margin: 0
+		position: relative
+	.img_contacts_md
+		position: absolute
+		left: -50px
+		img
+			margin-top: 50px
+
+
+	.form_sm
+		margin: 0
+		padding: 0
+	.contact-form
+		margin-top: -15px
+		width: 100%
+		padding: 16px 16px
+		background-color: #fff
+		font-size: 13px
+		&-head
+			text-align: center
+			h3
+				font-family: roboto-regular,sans-serif
+				font-size: 20px
+				line-height: 25px
+		input
+			padding: 16px 16px
+			width: 100%
+			border-radius: 5px
+			border: 1px solid #98999e
+			margin-bottom: 7px
+			height: 50px
+			background-color: #f6f5f5
+		textarea
+			width: 100%
+			min-width: 100%
+			max-width: 100%
+			min-height: 50px
+			height: 160px
+			padding: 16px 16px
+			border-radius: 5px
+			border: 1px solid #98999e
+			background-color: #f6f5f5
+		textarea, input
+			+mt(.25s)
+			&:hover, &:focus
+				border-color: black
+		p
+			font-size: 12px
+			color: #807c79
+			margin-bottom: 0
+		.btn_more_dark
+			height: 50px
+			width: 200px
+			display: block
+			margin: auto
+			margin-top: 15px
+
+.contacts_wrapper
+	h3
+		margin-top: 140px
+		font-family: roboto-regular,sans-serif
+		font-size: 20px
+		line-height: 25px
+	p
+		margin: 0
+	span
+		font-weight: bold
+
+	.links
+		img
+			margin: 30px 5px
+
+footer
+	margin-top: 50px
+	background-color: #423f3d
+	padding-top: 30px
+	color: #fff
+	.gotop_wrapper
+		position: relative
+		img
+			margin-right: 10px
+			margin-top: -3px
+		a
+			color: #fff
+			font-family: roboto-medium,sans-serif
+			text-transform: uppercase
+			font-weight: normal
+			float: right	
+			font-size: 16px
+			&:hover
+				color: darken(#fff, 60%)
+	p
+		font-size: 12px
+		color: #807c79
+		margin-top: 10px
+		line-height: 16px
+
+
+
+.contact-form_hidden
+	margin: auto
+	width: 600px
+	padding: 10px 16px
+	background-color: #fff
+	font-size: 13px
+	h3
+		padding: 0
+		margin: 15px 0 20px
+		text-align: center
+		font-family: roboto-regular,sans-serif
+		font-size: 20px
+		line-height: 25px
+
+	input
+		padding: 16px 16px
+		width: 100%
+		border-radius: 5px
+		border: 1px solid #98999e
+		margin-bottom: 7px
+		height: 50px
+		background-color: #f6f5f5
+	textarea
+		width: 100%
+		min-width: 100%
+		max-width: 100%
+		min-height: 50px
+		height: 160px
+		padding: 16px 16px
+		border-radius: 5px
+		border: 1px solid #98999e
+		background-color: #f6f5f5
+	textarea, input
+		+mt(.25s)
+		&:hover, &:focus
+			border-color: black
+	p
+		font-size: 12px
+		color: #807c79
+		margin-bottom: 0
+		line-height: 20px
+		span
+			color: #000
+			margin-left: 0px
+			font-size: 13px
+			font-family: roboto-thin,sans-serif
+			font-weight: bold
+	ol
+		padding-left: 25px
+		padding-right: 25px
+		li
+			margin-bottom: 15px
+			font-family: roboto-light,sans-serif
+			font-size: 12px
+
+	.btn_more_dark
+		height: 50px
+		width: 200px
+		display: block
+		margin: auto
+		margin-top: 15px
+		margin-bottom: 20px
+
+.mfp-close
+	color: red!important
+	+mt(.25s)
+
+.my-mfp-zoom-in
+  .zoom-anim-dialog
+    opacity: 0
+
+    transition: all 0.2s ease-in-out
+    transform: scale(0.8)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog
+    transform: scale(0.8)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.95
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+/* yogaart.html */
+
+.header
+	h1
+		text-transform: none
+		text-align: center
+		margin: 75px 0 0 0
+		font-size: 40px
+		font-family: roboto-medium,sans-serif
+	background-image: url("../img/yogaart/header_bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100%
+	height: 320px
+	padding: 50px 0
+	.blue_square
+		position: absolute
+		top: 170px
+		width: 100px
+		height: 100px
+		background-color: #8bb9cc
+		right: 26vw
+	.black_square
+		position: absolute
+		top: 240px
+		width: 60px
+		height: 60px
+		background-color: #000
+		right: 25vw
+	.bg_brush
+		position: absolute
+		top: 150px
+		left: 50%;
+		transform: translateX(-50%)
+
+	.logo_img
+		margin: -4px 0
+		img
+			width: 105px
+	.callback_1, .callback_sm
+		text-align: center
+		font-family: roboto-regular, sans-serif
+		font-size: 13px
+		line-height: 15px
+		img
+			padding: 0 7px
+		a
+			span
+				+mt(.25s)
+				border-bottom: 1px solid transparent
+				&:hover
+					border-bottom: 1px solid #050505
+	.icons_soc
+		a
+			display: inline
+	nav
+		ul
+			font-family: roboto-regular,sans-serif
+			font-size: 12px
+			text-transform: uppercase
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				padding: 0
+				margin: 0
+				display: inline-block
+				margin: 0 19px 0 0
+		a
+			&:hover
+				border-bottom: 1px solid #050505
+.toggle-mnu 
+	position: absolute
+	display: block
+	width: 45px
+	height: 28px
+	margin-top: 0
+	float: right
+	right: 0
+	margin-right: 50px
+
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #000
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+
+.gallery
+	margin-top: 50px
+	margin-bottom: 0
+	position: relative
+	.gallery_item
+		position: relative
+		padding: 0
+		margin: 0
+		margin-top: 30px
+		margin-bottom: 20px
+		img
+			max-width: 450px
+			height: auto
+		.descr_wrap
+			margin-top: 45px
+			h2
+				font-size: 20px
+				font-family: roboto-light,sans-serif
+		.in_stock
+			position: absolute
+			bottom: 0
+			right: 0
+			p
+				font-size: 18px
+				display: inline-block
+			a
+				margin-left: 50px
+	.gallery_bottom
+		h3
+			margin-top: 50px
+			font-family: roboto-regular,sans-serif
+		.big_square
+			position: absolute
+			transform: rotate(45deg)
+			height: 100px
+			width: 100px
+			background-color: #b2aeab
+			bottom: 80px
+			right: 130px
+		.small_square
+			position: absolute
+			height: 60px
+			width: 60px
+			background-color: #8bb9cc
+			bottom: 0px
+			right: 220px
+		.btn_accent
+			margin-top: 30px
+			width: 200px
+			text-align: center
+			padding-right: 0
+			padding-left: 0
+
+		.contacts_wrapper
+			margin-top: 90px
+			margin-bottom: 0px
+			h3
+				margin-top: 0
+
+
+
+
+
 
 
 @import "media" // Всегда в конце
