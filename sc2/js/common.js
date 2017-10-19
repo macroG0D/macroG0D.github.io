@@ -1,150 +1,150 @@
-$(function() {
-	var numbers = 0;
-	var example = '';
-	var equation = [];
-	var percentageX = '';
-	var percentageY = '';
-	var symbol = '';
 
-//Numbers inputs
-$('.numBtn').click(function() {
-	if (numbers.length >= 18) {
-		return;
-	} else {
-		if (numbers == '0') {
-			numbers = this.value;
-		} 
-		else if(numbers == '0.'){
-			numbers += this.value;
-		} else {
-			numbers += this.value;
-		}
+var slideIndex=1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+	var i;
+	var slides = document.getElementsByClassName("sliders_item");
+
+	if(n > slides.length){
+		slideIndex = 1;
 	}
-	$('.calcIn').text(numbers);
-})
-
-// 'A comma'
-$('.commaBtn').click(function(){
-	substring = ".";
-	var x = numbers.indexOf(substring) !== -1;
-	if(numbers.toString().length >= 1 && x === false){
-		numbers += '.';
-		$('.calcIn').text(numbers);
-	} else if (numbers.toString() === '' || numbers.toString() === '0'){
-		numbers += '0.';
-		$('.calcIn').text(numbers);
+	if(n < 1){
+		slideIndex = slides.length;
 	}
-})
-
-//C button
-$('.cButton').click(function(){
-	numbers = '0', example = ''
-	$('.calcIn').text(numbers);
-	$('.desk').text(example);
-	equation = [];
-})
-
-//CE Button
-$('.CEbtn').click(function(){
-	numbers = '0';
-	$('.calcIn').text(numbers);
-})
-
-//Del
-$('.delBtn').click(function(){
-	numbers = numbers.substring(0, numbers.length - 1);
-	$('.calcIn').text(numbers);
-})
-
-//+ - / *
-$('.funcBtn').click(function(){
-		example += ($('.calcIn').text());
-		$('.desk').text(example+=this.value);
-		equation.push(numbers);
-		equation.push(this.value);
-		numbers = '';
-		$('.calcIn').text(numbers);
-		percentageX = (equation[0]);
-		symbol = this.value;
-})
-
-//A square
-$('.square').click(function(){
-	$('.desk').text('sqr('+ numbers + ')');	
-	console.log('sqr('+ numbers +')'+'=' + numbers*numbers)
-	numbers = numbers*numbers;
-	$('.calcIn').text(numbers);
-
-
-})
-//A radical
-$('.radical').click(function(){
-	$('.desk').text('√('+ numbers + ')');	
-	console.log('√('+ numbers +')'+'=' + Math.sqrt(numbers))
-	numbers = Math.sqrt(numbers);
-	$('.calcIn').text(numbers);
-	console.log('√('+ numbers +')'+'=' + numbers)
-})
-
-//%
-$('.percentage').click(function(){
-	var y = [];
-	y.push(numbers);
-	percentageY = (y[0]);
-	var percentage = eval(percentageX * percentageY / 100);
-	$('.desk').text(percentageX + symbol + percentage);
-	$('.calcIn').text(percentage);
-	equation = [percentageX, symbol];
-	example = '';
-	numbers = percentage;
-	$('.±').click(function(){
-		$('.desk').text(percentageX + symbol + '(' + numbers + ')');
-	})
-	console.log(percentageX + symbol + percentageY + '%' );
-})
-
-// ±
-$('.±').click(function(){
-	var temp1 = numbers*2;
-	if (numbers > 0){
-		numbers = numbers-temp1;
-		$('.calcIn').text(numbers);
-	}else if (numbers < 0){
-		numbers = numbers-temp1;
-		$('.calcIn').text(numbers);
-	}else{
-		return;
+	for(i=0; i<slides.length; i++){
+		slides[i].style.display = "none";
 	}
 
-})
+	slides[slideIndex-1].style.display = "block";
+}
 
-// =
-$('.equalBtn').click(function(){
-	equation.push(numbers)
-	$('.desk').text('');	
-	$('.calcIn').text(numbers);
-	y = equation.toString();
-	y = y.replace (/,/g, "");
-	var result = eval(y);
-	$('.calcIn').text(result);
-	console.log(y + '=' + result);
-	equation = [];
-	example = '';
-	numbers = result;
-	percentageX = '';
-	percentageY = '';
-	symbol = '';
-})
-
-//If more then 12 digits on number, changing font size to 1.5em, if 12 or less - keeps the standart font size of 2.5em.
-$(window).click(function(){
-	var smaller = document.querySelector('.calcIn');
-	if (numbers.toString().length <= 12){
-		smaller.style.fontSize = '2.5em';
-	}else{
-		smaller.style.fontSize = '1.5em';
-	}
-})
-
+$(".toggle-mnu").click(function() {
+	$(this).toggleClass("on");
+	$(".hidden_menu").slideToggle();
+	return false;
 });
 
+$('.format_item').equalHeights();
+
+
+
+( function() {
+
+	var youtube = document.querySelectorAll( ".youtube" );
+	
+	for (var i = 0; i < youtube.length; i++) {
+		
+		var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+		
+		var image = new Image();
+		image.src = source;
+		image.addEventListener( "load", function() {
+			youtube[ i ].appendChild( image );
+		}( i ) );
+		
+		youtube[i].addEventListener( "click", function() {
+
+			var iframe = document.createElement( "iframe" );
+
+			iframe.setAttribute( "frameborder", "0" );
+			iframe.setAttribute( "allowfullscreen", "" );
+			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+
+			this.innerHTML = "";
+			this.appendChild( iframe );
+		} );    
+	};
+	
+} )();
+
+
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+
+	$('a[href="#callback"').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: false,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+		$('a[href="#callback_training"').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: false,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});		
+
+		$('a[href="#callback_art1"').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: false,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+
+
+$(".top").click(function(){
+	$("html, body").animate({scrollTop: 0}, "slow");
+});
+
+	$(".regular_nav, .hidden_menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, "slow");
+	});
