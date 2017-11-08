@@ -1,0 +1,30 @@
+/* add your CSS here */
+.card {
+	border: 1px solid #e4e4e4;
+	width: 300px;
+	padding: 0 15px;
+}
+
+.inner_card {
+	border: 1px solid #e4e4e4;
+	margin: 15px 0;
+	padding: 0 15px;
+}
+
+.imgMain {
+	width: 300px;
+}
+
+
+.italized {
+	font-style: italic;
+}
+
+span {
+	font-weight: bold;
+}
+
+ul {
+		list-style-type: none;
+		padding: 0;
+}
