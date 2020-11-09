@@ -3,456 +3,500 @@
 
 <head>
 
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<title>YogaART - Галерея</title>
-	<meta name="description" content="">
+  <title>YogaART - Галерея</title>
+  <meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="./css/">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <style>
+    body {
+      opacity: 0;
+      overflow-x: hidden;
+    }
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+    html {
+      background-color: #fff;
+    }
+  </style>
 </head>
 
 <body>
 
-	<section class="header">
-		<div class="container">
-			<div class="row">
-				<div class="blue_square"></div>
-				<div class="black_square"></div>
-				<div class="col-md-2 col-sm-2 col-xs-2">
-					<div class="logo_img">
-						<a href="index.html"><img src="img/logo.png" alt="lototype"></a>
-					</div>
-				</div>
-				<div class="col-md-3 hidden-sm hidden-xs">
-					<div class="callback_1" data-form="Отправить сообщение">
-						<a href="#callback"><img src="img/icon_mail.png" alt="mailto"><span>Отправить сообщение</span></a>
-					</div>
-				</div>
-				<a href="#" class="toggle-mnu hidden-lg hidden-md hidden-sm"><span></span></a>
-				
-				<div class="col-md-5 col-sm-8 col-xs-7 ">
-					<nav class="regular_nav">                       
-						<ul>
-							<li><a href="/index.html#about">Обо мне</a></li>
-							<li><a href="/index.html#training">Обучение</a></li>
-							<li><a href="/index.html#video">Видео</a></li>
-							<li><a href="/index.html#psyart">Psyart</a></li>
-							<li><a href="/index.html#contacts">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-2 col-sm-2 col-xs-12">
-					<div class="icons_soc hidden-sm col-md-12 col-xs-1">
-						<a href="https://www.facebook.com/profile.php?id=100004695558787" target="_blank"><img src="img/fb.png" alt="facebook"></a>
-						<a href="https://www.instagram.com/kutafinboris/" target="_blank"><img src="img/instag.png" alt="instagram"></a>
-						<a href="https://www.youtube.com/channel/UC0nfNsrxjR5C3QVhctMMang" target="_blank"><img src="img/youtube.png" alt="youtube channel"></a>
-					</div>
-				</div>
-				<nav class="hidden_menu hidden-lg hidden-xl hidden-md hidden-sm">
-					<ul>
-						<li><a href="/index.html#about">Обо мне</a></li>
-						<li><a href="/index.html#training">Обучение</a></li>
-						<li><a href="/index.html#video">Видео</a></li>
-						<li><a href="/index.html#psyart">Psyart</a></li>
-						<li><a href="/index.html#contacts">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="hidden-sm hidden-md hidden-lg hidden-xl col-xs-12">						
-					<div class="callback_sm">
-						<a href="#"><img src="img/icon_mail.png" alt="mailto"><span>Отправить сообщение</span></a>
-					</div>
-				</div>
-				<div class="bg_brush">
-					<img src="img/yogaart/bg-brush.png" alt="bg_brush">
-				</div>
-				<div class="col-sm-2 col-xs-3">
-					<div class="icons_vertical_sm hidden-md hidden-lg hidden-xl">
-						<a href="https://www.facebook.com/profile.php?id=100004695558787" target="_blank"><img src="img/fb.png" alt="facebook"></a>
-						<a href="https://www.instagram.com/kutafinboris/" target="_blank"><img src="img/instag.png" alt="instagram"></a>
-						<a href="https://www.youtube.com/channel/UC0nfNsrxjR5C3QVhctMMang" target="_blank"><img src="img/youtube.png" alt="youtube channel"></a>
-					</div>
-				</div>
-
-				<div class="col-sm-12 hidden-md hidden-lg hidden-xl hidden-xs">						
-					<div class="callback_sm" data-form="Отправить сообщение">
-						<a href="#callback"><img src="img/icon_mail.png" alt="mailto"><span>Отправить сообщение</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-
-					<h1>YogaART ГАЛЕРЕЯ</h1>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="gallery">
-		<div class="container">
-			<div class="row">
-				
-				<div class="gallery_item col-md-12 col-sm-12 col-xs-12">
-					<div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
-						<img src="img/yogaart/1.jpg" alt="And now seriosly">
-					</div>
-					<div class="col-md-7 col-sm-12 col-xs-12 descr_wrap">
-						<h2>And now seriosly</h2>
-						<p>Сбивает поверхностную эмоциональную суету, наводит фокус внимания на серьезное и глубинно важное  в сознании, в том числе и на те сферы, которые человек обычно избегает, старается не думать о них.
-						</p>
-						<p>
-							Помагает понять глубокие причины тех или иных событий, хотя это и не всегда приятно, ибо большая часть этих событий теи или иным образом сформированы самим человеком.
-						</p>	
-						<p>
-							Не вешать в местах, где постоянно или длительное время находятся люди с ослабленной или несформированной  (дети до 16 лет) психикой.
-						</p>
-					</div>
-					<div class="in_stock">
-						<p>Картину можно приобрести</p>
-						<a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
-					</div>
-				</div>
-
-				
-				<div class="gallery_item col-sm-12 col-md-12 col-xs-12">
-					<div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
-						<img src="img/yogaart/2.jpg" alt="Матрица дхармы">
-					</div>
-					<div class="col-md-7 col-sm-12 col-xs-12 descr_wrap">
-						<h2>Матрица дхармы</h2>
-						<p>Матрица (схема, алгоритм) реализации/воплощения дхармы, заложенных изначально качеств и задач в жизни каждого человека.
-						</p><p>
-							Дхарма каждого существа совершенно уникальна и неповторима, однако ее реализация одинаково для всех является актом воплощения собственного  Духа, как истинно творческое раскрытие заложенного потенциала.
-						</p><p>
-							Картина изготовлена специально для студии йоги «Дзен».
-						</p>
-					</div>
-					<div class="in_stock hidden">
-						<p>Картину можно приобрести</p>
-						<a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
-					</div>
-				</div>
-
-				
-				<div class="gallery_item col-sm-12 col-md-12 col-xs-12">
-					<div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
-						<img src="img/yogaart/3.jpg" alt="Свет сознания">
-					</div>
-					<div class="col-md-7 col-xs-12 descr_wrap">
-						<h2>Свет сознания</h2>
-						<p>Включает процесс активного осознования в качестве фонового режима работы всей системы.
-						</p><p>
-							При этом сам процесс осознавания происходит не направленно, а как бы в целом, все время, как некое генеральное фоновое действие по усвоению ‘внешнего’ для наиболее точной отстройки ‘внутреннего’.
-						</p>
-					</div>
-					<div class="in_stock">
-						<p>Картину можно приобрести</p>
-						<a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
-					</div>
-				</div>
-
-				
-				<div class="gallery_item col-sm-12 col-md-12 col-xs-12">
-					<div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
-						<img src="img/yogaart/4.jpg" alt="Тишина снаружи - тишина внутри">
-					</div>
-					<div class="col-md-7 col-xs-12 descr_wrap">
-						<h2>Тишина снаружи - тишина внутри</h2>
-						<p>Формирует состояние внутренней тишины, на фоне которого происходит погружение в глубину личности.
-						</p><p>
-							Актуализирует и ‘пробуждает’ структурные элементы сознания, которые являются основополагающими и ‘несущими’, но индивидуальными для каждого конкретного человека.
-						</p>
-					</div>
-					<div class="in_stock">
-						<p>Картину можно приобрести</p>
-						<a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
-					</div>
-				</div>
-
-				
-				<div class="gallery_item col-sm-12 col-md-12 col-xs-12">
-					<div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
-						<img src="img/yogaart/5.jpg" alt="And now seriosly">
-					</div>
-					<div class="col-md-7 col-xs-12 descr_wrap">
-						<h2>правильный выбор</h2>
-						<p>Создает необходимое состояние и условия для выбора наиболее верного, эффективного решения в данных условиях, в данное время, для всех сторон.
-						</p><p>
-							При этом ‘выбирается’ не самое выгодное решение ‘на сейчас’, а наиболее оптимальное для всех участников на длительном промежутке времени с учетом всех аспектов вопроса, ведь именно такое решение в итоге приведет к наиболее выгодному положению самого ‘решающего’. 
-						</p>
-					</div>
-					<div class="in_stock">
-						<p>Картину можно приобрести</p>
-						<a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
-					</div>
-				</div>
-
-
-				<div class="gallery_item col-sm-12 col-md-12 col-xs-12">
-					<div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
-						<img src="img/yogaart/6.jpg" alt="And now seriosly">
-					</div>
-					<div class="col-md-7 col-xs-12 descr_wrap">
-						<h2>Голос тибета</h2>
-						<p>Отстраивает жизненное пространство в соответствии с высшими ценностями конкретного человека, присущими именно ему.
-						</p>	<p>
-							На каждого человека влиять будет по-разному, в зависимости от индивидуальных качеств. 
-						</p><p>
-							Под ценностями подразумеваются именно главные, образующие основу личности, внутренние приоритеты, которые изначально заложены при рождении, а не те, которые человек ‘надумал’ по ходу жизни.
-						</p>
-					</div>
-					<div class="in_stock hidden">
-						<p>Картину можно приобрести</p>
-						<a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="gallery_bottom">
-				<div class="big_square"></div>
-				<div class="small_square"></div>
-				<div class="col-md-8 col-sm-12 bottom-wrap">
-					<h3>Готовые картины или на заказ под вашу задачу</h3>
-					<p>Вы можете подобрать себе YogaART из уже имеющихся или заказать картину, которая бы несла в себе необходимый функционал сообразно Вашим конкретным задачам. 
-					</p>
-					<p>
-						Спектр таковых практически не ограничен, будь то здоровье, решение жизненных или личностных задач, создание необходимых качеств пространству, активация каких-то внутренних качеств (творческого вдохновения, собранности, расслабленности и т.д.), а также многое другое. 
-					</p>
-					<p>
-					Картина не может нести деструктивной функции, приносящей вред или ущерб кому-либо.</p>
-					<a href="#callback_art1" class="btn_accent" data-form="Заказать картину">Заказать картину</a>
-				</div>
-
-				<div class="col-md-4 col-sm-5 contacts_wrapper">
-					<h3>Контакты:</h3>
-					<p><span>E-mail: </span>Yogation.online@gmail.com</p>
-					<p><span>Skype:&nbsp </span>Yogation.online@gmail.com</p>
-					<div class="links">
-						<a href="https://www.facebook.com/profile.php?id=100004695558787" target="_blank"><img src="img/sect_contacts/fb.png" alt="facebook"></a>
-						<a href="https://www.youtube.com/channel/UC0nfNsrxjR5C3QVhctMMang" target="_blank"><img src="img/sect_contacts/yt.png" alt="youtube channel"></a>
-						<a href="https://www.instagram.com/kutafinboris/" target="_blank"><img src="img/sect_contacts/insta.png" alt="instagram"></a>
-					</div>
-				</div>
-			</div>
-
-
-
-
-		</div>
-	</div>
-</section>
-
-
-
-
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="logo_img">
-					<a href="index.html"><img src="img/logo_footer.png" alt="lototype"></a>
-				</div>
-			</div>
-			<div class="col-md-9 col-sm-9 col-xs-6 gotop_wrapper top">
-				<a href="#"><span><img src="img/arrow.png" alt="goTop">Наверх</span></a>
-			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<p>Все права защищены, Копирование любых материалов преследуется по закону</p>
-			</div>
-
-		</div>
-	</div>
-
-</footer>
-
-<div class="hidden">
-
-
-	<form id="callback" class="contact-form_hidden">
-
-		<div class="contact-form-head">
-			<h3>Напишите мне или оставьте 
-			свой контакт для связи</h3>	
-		</div>
-		<label>
-			<input type="text" name="Имя" placeholder="Ваше имя" required>
-		</label>
-		<label>
-			<input type="text" name="E-mail" placeholder="Ваш E-mail" required>
-		</label>
-		<label>
-			<textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
-		</label>
-		<p>*Ваши данные не будут переданы третьим лицам</p>
-		<button class="btn_more_dark">Отправить</button>
-
-	</form>
-
-
-	<form id="callback_training" class="contact-form_hidden">
-
-		<div class="contact-form-head">
-			<h3>Напишите мне или оставьте 
-			свой контакт для связи</h3>	
-		</div>
-		<label>
-			<input type="text" name="Имя" placeholder="Ваше имя" required>
-		</label>
-		<label>
-			<input type="text" name="E-mail" placeholder="Ваш E-mail" required>
-		</label>
-
-		<p><span>Если Вас не затруднит, напишите, пожалуйста, следующее:</span></p>
-
-		<ol>
-			<li> Какой формат тренировок Вас интересует.</li>
-			<li>Что Вы хотите получить от занятий? Какие проблемы или задачи Вы хотите решить?</li>
-			<li>Расскажите немного о себе: пол, возраст; наличие проблем со здоровьем (если это не было указано выше); имеете ли опыт в спорте, йоге, цигун и т.п.; любую другую необходимую, на Ваш взгляд, информацию.</li>
-		</ol>
-
-		<label>
-			<textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
-		</label>
-		<p>*Ваши данные не будут переданы третьим лицам</p>
-		<button class="btn_more_dark">Отправить</button>
-	</form>
-
-	<form id="callback_art1" class="contact-form_hidden">
-
-		<div class="contact-form-head">
-			<h3>Напишите мне какая картина нужна или оставьте свой контакт для связи</h3>	
-		</div>
-		<label>
-			<input type="text" name="Имя" placeholder="Ваше имя" required>
-		</label>
-		<label>
-			<input type="text" name="E-mail" placeholder="Ваш E-mail" required>
-		</label>
-
-		<p><span>Перед тем как приступить к работе над картиной, мы созвонимся для уточнения всех деталей, но прежде укажите, пожалуйста:</span></p>
-
-		<ol>
-			<li> Для кого необходима картина.</li>
-			<li>Какие задачи картина должна выполнять.</li>
-		</ol>
-
-		<label>
-			<textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
-		</label>
-		<p>*Ваши данные не будут переданы третьим лицам</p>
-		<button class="btn_more_dark">Отправить</button>
-
-	</form>
-
-
-
-</div>
-
-
-<div class="hidden">
-
-
-	<form id="callback" class="contact-form_hidden">
-
-		<div class="contact-form-head">
-			<h3>Напишите мне или оставьте 
-			свой контакт для связи</h3>	
-		</div>
-		<label>
-			<input type="text" name="Имя" placeholder="Ваше имя" required>
-		</label>
-		<label>
-			<input type="text" name="E-mail" placeholder="Ваш E-mail" required>
-		</label>
-		<label>
-			<textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
-		</label>
-		<p>*Ваши данные не будут переданы третьим лицам</p>
-		<button class="btn_more_dark">Отправить</button>
-
-	</form>
-
-
-	<form id="callback_training" class="contact-form_hidden">
-
-		<div class="contact-form-head">
-			<h3>Напишите мне или оставьте 
-			свой контакт для связи</h3>	
-		</div>
-		<label>
-			<input type="text" name="Имя" placeholder="Ваше имя" required>
-		</label>
-		<label>
-			<input type="text" name="E-mail" placeholder="Ваш E-mail" required>
-		</label>
-		
-		<p><span>Если Вас не затруднит, напишите, пожалуйста, следующее:</span></p>
-		
-		<ol>
-			<li> Какой формат тренировок Вас интересует.</li>
-			<li>Что Вы хотите получить от занятий? Какие проблемы или задачи Вы хотите решить?</li>
-			<li>Расскажите немного о себе: пол, возраст; наличие проблем со здоровьем (если это не было указано выше); имеете ли опыт в спорте, йоге, цигун и т.п.; любую другую необходимую, на Ваш взгляд, информацию.</li>
-		</ol>
-
-		<label>
-			<textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
-		</label>
-		<p>*Ваши данные не будут переданы третьим лицам</p>
-		<button class="btn_more_dark">Отправить</button>
-	</form>
-
-	
-
-	<form id="callback_art2" class="contact-form_hidden">
-
-		<div class="contact-form-head">
-			<h3>Цена по договоренности.<h3>
-			<h3>Напишите мне или оставьте свой контакт для связи</h3>	
-		</div>
-		<label>
-			<input type="text" name="Имя" placeholder="Ваше имя" required>
-		</label>
-		<label>
-			<input type="text" name="E-mail" placeholder="Ваш E-mail" required>
-		</label>
-		<label>
-			<textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
-		</label>
-		<p>*Ваши данные не будут переданы третьим лицам</p>
-		<button class="btn_more_dark">Отправить</button>
-
-	</form>
-
-
-
-</div>
-
-
-
-<link rel="stylesheet" href="css/main.min.css">
-<link rel="stylesheet" href="libs/MagnificPopup/dist/magnific-popup.css">
-<script src="js/inner.min.js"></script>
+  <section class="header">
+    <div class="container">
+      <div class="row">
+        <div class="blue_square"></div>
+        <div class="black_square"></div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+          <div class="logo_img">
+            <a href="index.html"><img src="img/logo.png" alt="lototype"></a>
+          </div>
+        </div>
+        <div class="col-md-3 hidden-sm hidden-xs">
+          <div class="callback_1" data-form="Отправить сообщение">
+            <a href="#callback"><img src="img/icon_mail.png" alt="mailto"><span>Отправить сообщение</span></a>
+          </div>
+        </div>
+        <a href="#" class="toggle-mnu hidden-lg hidden-md hidden-sm"><span></span></a>
+
+        <div class="col-md-5 col-sm-8 col-xs-7 ">
+          <nav class="regular_nav">
+            <ul>
+              <li><a href="/index.html#about">Обо мне</a></li>
+              <li><a href="/index.html#training">Обучение</a></li>
+              <li><a href="/index.html#video">Видео</a></li>
+              <li><a href="/index.html#psyart">Psyart</a></li>
+              <li><a href="/index.html#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="icons_soc hidden-sm col-md-12 col-xs-1">
+            <a href="https://www.facebook.com/profile.php?id=100004695558787" target="_blank"><img src="img/fb.png"
+                alt="facebook"></a>
+            <a href="https://www.instagram.com/kutafinboris/" target="_blank"><img src="img/instag.png"
+                alt="instagram"></a>
+            <a href="https://www.youtube.com/channel/UC0nfNsrxjR5C3QVhctMMang" target="_blank"><img
+                src="img/youtube.png" alt="youtube channel"></a>
+          </div>
+        </div>
+        <nav class="hidden_menu hidden-lg hidden-xl hidden-md hidden-sm">
+          <ul>
+            <li><a href="/index.html#about">Обо мне</a></li>
+            <li><a href="/index.html#training">Обучение</a></li>
+            <li><a href="/index.html#video">Видео</a></li>
+            <li><a href="/index.html#psyart">Psyart</a></li>
+            <li><a href="/index.html#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="hidden-sm hidden-md hidden-lg hidden-xl col-xs-12">
+          <div class="callback_sm">
+            <a href="#"><img src="img/icon_mail.png" alt="mailto"><span>Отправить сообщение</span></a>
+          </div>
+        </div>
+        <div class="bg_brush">
+          <img src="img/yogaart/bg-brush.png" alt="bg_brush">
+        </div>
+        <div class="col-sm-2 col-xs-3">
+          <div class="icons_vertical_sm hidden-md hidden-lg hidden-xl">
+            <a href="https://www.facebook.com/profile.php?id=100004695558787" target="_blank"><img src="img/fb.png"
+                alt="facebook"></a>
+            <a href="https://www.instagram.com/kutafinboris/" target="_blank"><img src="img/instag.png"
+                alt="instagram"></a>
+            <a href="https://www.youtube.com/channel/UC0nfNsrxjR5C3QVhctMMang" target="_blank"><img
+                src="img/youtube.png" alt="youtube channel"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 hidden-md hidden-lg hidden-xl hidden-xs">
+          <div class="callback_sm" data-form="Отправить сообщение">
+            <a href="#callback"><img src="img/icon_mail.png" alt="mailto"><span>Отправить сообщение</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+          <h1>YogaART ГАЛЕРЕЯ</h1>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery">
+    <div class="container">
+      <div class="row">
+
+        <div class="gallery_item col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
+            <img src="img/yogaart/1.jpg" alt="And now seriosly">
+          </div>
+          <div class="col-md-7 col-sm-12 col-xs-12 descr_wrap">
+            <h2>And now seriosly</h2>
+            <p>Сбивает поверхностную эмоциональную суету, наводит фокус внимания на серьезное и глубинно важное в
+              сознании, в том числе и на те сферы, которые человек обычно избегает, старается не думать о них.
+            </p>
+            <p>
+              Помагает понять глубокие причины тех или иных событий, хотя это и не всегда приятно, ибо большая часть
+              этих событий теи или иным образом сформированы самим человеком.
+            </p>
+            <p>
+              Не вешать в местах, где постоянно или длительное время находятся люди с ослабленной или несформированной
+              (дети до 16 лет) психикой.
+            </p>
+          </div>
+          <div class="in_stock">
+            <p>Картину можно приобрести</p>
+            <a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
+          </div>
+        </div>
+
+
+        <div class="gallery_item col-sm-12 col-md-12 col-xs-12">
+          <div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
+            <img src="img/yogaart/2.jpg" alt="Матрица дхармы">
+          </div>
+          <div class="col-md-7 col-sm-12 col-xs-12 descr_wrap">
+            <h2>Матрица дхармы</h2>
+            <p>Матрица (схема, алгоритм) реализации/воплощения дхармы, заложенных изначально качеств и задач в жизни
+              каждого человека.
+            </p>
+            <p>
+              Дхарма каждого существа совершенно уникальна и неповторима, однако ее реализация одинаково для всех
+              является актом воплощения собственного Духа, как истинно творческое раскрытие заложенного потенциала.
+            </p>
+            <p>
+              Картина изготовлена специально для студии йоги «Дзен».
+            </p>
+          </div>
+          <div class="in_stock hidden">
+            <p>Картину можно приобрести</p>
+            <a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
+          </div>
+        </div>
+
+
+        <div class="gallery_item col-sm-12 col-md-12 col-xs-12">
+          <div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
+            <img src="img/yogaart/3.jpg" alt="Свет сознания">
+          </div>
+          <div class="col-md-7 col-xs-12 descr_wrap">
+            <h2>Свет сознания</h2>
+            <p>Включает процесс активного осознования в качестве фонового режима работы всей системы.
+            </p>
+            <p>
+              При этом сам процесс осознавания происходит не направленно, а как бы в целом, все время, как некое
+              генеральное фоновое действие по усвоению ‘внешнего’ для наиболее точной отстройки ‘внутреннего’.
+            </p>
+          </div>
+          <div class="in_stock">
+            <p>Картину можно приобрести</p>
+            <a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
+          </div>
+        </div>
+
+
+        <div class="gallery_item col-sm-12 col-md-12 col-xs-12">
+          <div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
+            <img src="img/yogaart/4.jpg" alt="Тишина снаружи - тишина внутри">
+          </div>
+          <div class="col-md-7 col-xs-12 descr_wrap">
+            <h2>Тишина снаружи - тишина внутри</h2>
+            <p>Формирует состояние внутренней тишины, на фоне которого происходит погружение в глубину личности.
+            </p>
+            <p>
+              Актуализирует и ‘пробуждает’ структурные элементы сознания, которые являются основополагающими и
+              ‘несущими’, но индивидуальными для каждого конкретного человека.
+            </p>
+          </div>
+          <div class="in_stock">
+            <p>Картину можно приобрести</p>
+            <a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
+          </div>
+        </div>
+
+
+        <div class="gallery_item col-sm-12 col-md-12 col-xs-12">
+          <div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
+            <img src="img/yogaart/5.jpg" alt="And now seriosly">
+          </div>
+          <div class="col-md-7 col-xs-12 descr_wrap">
+            <h2>правильный выбор</h2>
+            <p>Создает необходимое состояние и условия для выбора наиболее верного, эффективного решения в данных
+              условиях, в данное время, для всех сторон.
+            </p>
+            <p>
+              При этом ‘выбирается’ не самое выгодное решение ‘на сейчас’, а наиболее оптимальное для всех участников на
+              длительном промежутке времени с учетом всех аспектов вопроса, ведь именно такое решение в итоге приведет к
+              наиболее выгодному положению самого ‘решающего’.
+            </p>
+          </div>
+          <div class="in_stock">
+            <p>Картину можно приобрести</p>
+            <a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
+          </div>
+        </div>
+
+
+        <div class="gallery_item col-sm-12 col-md-12 col-xs-12">
+          <div class="col-md-5 col-sm-12 col-xs-12 img_wrap">
+            <img src="img/yogaart/6.jpg" alt="And now seriosly">
+          </div>
+          <div class="col-md-7 col-xs-12 descr_wrap">
+            <h2>Голос тибета</h2>
+            <p>Отстраивает жизненное пространство в соответствии с высшими ценностями конкретного человека, присущими
+              именно ему.
+            </p>
+            <p>
+              На каждого человека влиять будет по-разному, в зависимости от индивидуальных качеств.
+            </p>
+            <p>
+              Под ценностями подразумеваются именно главные, образующие основу личности, внутренние приоритеты, которые
+              изначально заложены при рождении, а не те, которые человек ‘надумал’ по ходу жизни.
+            </p>
+          </div>
+          <div class="in_stock hidden">
+            <p>Картину можно приобрести</p>
+            <a href="#callback_art2" class="btn_more_dark" data-form="Заказать картину">Отправить заявку</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="gallery_bottom">
+        <div class="big_square"></div>
+        <div class="small_square"></div>
+        <div class="col-md-8 col-sm-12 bottom-wrap">
+          <h3>Готовые картины или на заказ под вашу задачу</h3>
+          <p>Вы можете подобрать себе YogaART из уже имеющихся или заказать картину, которая бы несла в себе необходимый
+            функционал сообразно Вашим конкретным задачам.
+          </p>
+          <p>
+            Спектр таковых практически не ограничен, будь то здоровье, решение жизненных или личностных задач, создание
+            необходимых качеств пространству, активация каких-то внутренних качеств (творческого вдохновения,
+            собранности, расслабленности и т.д.), а также многое другое.
+          </p>
+          <p>
+            Картина не может нести деструктивной функции, приносящей вред или ущерб кому-либо.</p>
+          <a href="#callback_art1" class="btn_accent" data-form="Заказать картину">Заказать картину</a>
+        </div>
+
+        <div class="col-md-4 col-sm-5 contacts_wrapper">
+          <h3>Контакты:</h3>
+          <p><span>E-mail: </span>Yogation.online@gmail.com</p>
+          <p><span>Skype:&nbsp </span>Yogation.online@gmail.com</p>
+          <div class="links">
+            <a href="https://www.facebook.com/profile.php?id=100004695558787" target="_blank"><img
+                src="img/sect_contacts/fb.png" alt="facebook"></a>
+            <a href="https://www.youtube.com/channel/UC0nfNsrxjR5C3QVhctMMang" target="_blank"><img
+                src="img/sect_contacts/yt.png" alt="youtube channel"></a>
+            <a href="https://www.instagram.com/kutafinboris/" target="_blank"><img src="img/sect_contacts/insta.png"
+                alt="instagram"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="logo_img">
+            <a href="index.html"><img src="img/logo_footer.png" alt="lototype"></a>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-9 col-xs-6 gotop_wrapper top">
+          <a href="#"><span><img src="img/arrow.png" alt="goTop">Наверх</span></a>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <p>Все права защищены, Копирование любых материалов преследуется по закону</p>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="hidden">
+
+
+    <form id="callback" class="contact-form_hidden">
+
+      <div class="contact-form-head">
+        <h3>Напишите мне или оставьте
+          свой контакт для связи</h3>
+      </div>
+      <label>
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <input type="text" name="E-mail" placeholder="Ваш E-mail" required>
+      </label>
+      <label>
+        <textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
+      </label>
+      <p>*Ваши данные не будут переданы третьим лицам</p>
+      <button class="btn_more_dark">Отправить</button>
+
+    </form>
+
+
+    <form id="callback_training" class="contact-form_hidden">
+
+      <div class="contact-form-head">
+        <h3>Напишите мне или оставьте
+          свой контакт для связи</h3>
+      </div>
+      <label>
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <input type="text" name="E-mail" placeholder="Ваш E-mail" required>
+      </label>
+
+      <p><span>Если Вас не затруднит, напишите, пожалуйста, следующее:</span></p>
+
+      <ol>
+        <li> Какой формат тренировок Вас интересует.</li>
+        <li>Что Вы хотите получить от занятий? Какие проблемы или задачи Вы хотите решить?</li>
+        <li>Расскажите немного о себе: пол, возраст; наличие проблем со здоровьем (если это не было указано выше);
+          имеете ли опыт в спорте, йоге, цигун и т.п.; любую другую необходимую, на Ваш взгляд, информацию.</li>
+      </ol>
+
+      <label>
+        <textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
+      </label>
+      <p>*Ваши данные не будут переданы третьим лицам</p>
+      <button class="btn_more_dark">Отправить</button>
+    </form>
+
+    <form id="callback_art1" class="contact-form_hidden">
+
+      <div class="contact-form-head">
+        <h3>Напишите мне какая картина нужна или оставьте свой контакт для связи</h3>
+      </div>
+      <label>
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <input type="text" name="E-mail" placeholder="Ваш E-mail" required>
+      </label>
+
+      <p><span>Перед тем как приступить к работе над картиной, мы созвонимся для уточнения всех деталей, но прежде
+          укажите, пожалуйста:</span></p>
+
+      <ol>
+        <li> Для кого необходима картина.</li>
+        <li>Какие задачи картина должна выполнять.</li>
+      </ol>
+
+      <label>
+        <textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
+      </label>
+      <p>*Ваши данные не будут переданы третьим лицам</p>
+      <button class="btn_more_dark">Отправить</button>
+
+    </form>
+
+
+
+  </div>
+
+
+  <div class="hidden">
+
+
+    <form id="callback" class="contact-form_hidden">
+
+      <div class="contact-form-head">
+        <h3>Напишите мне или оставьте
+          свой контакт для связи</h3>
+      </div>
+      <label>
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <input type="text" name="E-mail" placeholder="Ваш E-mail" required>
+      </label>
+      <label>
+        <textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
+      </label>
+      <p>*Ваши данные не будут переданы третьим лицам</p>
+      <button class="btn_more_dark">Отправить</button>
+
+    </form>
+
+
+    <form id="callback_training" class="contact-form_hidden">
+
+      <div class="contact-form-head">
+        <h3>Напишите мне или оставьте
+          свой контакт для связи</h3>
+      </div>
+      <label>
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <input type="text" name="E-mail" placeholder="Ваш E-mail" required>
+      </label>
+
+      <p><span>Если Вас не затруднит, напишите, пожалуйста, следующее:</span></p>
+
+      <ol>
+        <li> Какой формат тренировок Вас интересует.</li>
+        <li>Что Вы хотите получить от занятий? Какие проблемы или задачи Вы хотите решить?</li>
+        <li>Расскажите немного о себе: пол, возраст; наличие проблем со здоровьем (если это не было указано выше);
+          имеете ли опыт в спорте, йоге, цигун и т.п.; любую другую необходимую, на Ваш взгляд, информацию.</li>
+      </ol>
+
+      <label>
+        <textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
+      </label>
+      <p>*Ваши данные не будут переданы третьим лицам</p>
+      <button class="btn_more_dark">Отправить</button>
+    </form>
+
+
+
+    <form id="callback_art2" class="contact-form_hidden">
+
+      <div class="contact-form-head">
+        <h3>Цена по договоренности.<h3>
+            <h3>Напишите мне или оставьте свой контакт для связи</h3>
+      </div>
+      <label>
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+      </label>
+      <label>
+        <input type="text" name="E-mail" placeholder="Ваш E-mail" required>
+      </label>
+      <label>
+        <textarea name="Сообщение" cols="30" rows="9" placeholder="Текстовое сообщение"></textarea>
+      </label>
+      <p>*Ваши данные не будут переданы третьим лицам</p>
+      <button class="btn_more_dark">Отправить</button>
+
+    </form>
+
+
+
+  </div>
+
+
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="libs/MagnificPopup/dist/magnific-popup.css">
+  <script src="js/inner.min.js"></script>
 
 </body>
+
 </html>

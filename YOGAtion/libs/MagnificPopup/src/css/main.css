@@ -1,3 +1,4 @@
+/* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
   left: 0;
@@ -53,7 +54,8 @@
   z-index: 1045;
 }
 
-.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
   width: 100%;
   cursor: auto;
 }
@@ -62,12 +64,7 @@
   cursor: progress;
 }
 
-.mfp-zoom-out-cur {
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
-}
-
-.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
@@ -82,7 +79,10 @@
   cursor: auto;
 }
 
-.mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -117,7 +117,11 @@
   color: #FFF;
 }
 
-.mfp-s-ready .mfp-preloader, .mfp-s-error .mfp-content {
+.mfp-s-ready .mfp-preloader {
+  display: none;
+}
+
+.mfp-s-error .mfp-content {
   display: none;
 }
 
@@ -171,7 +175,8 @@ button::-moz-focus-inner {
   color: #333;
 }
 
-.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
   color: #FFF;
   right: -6px;
   text-align: right;
@@ -198,7 +203,7 @@ button::-moz-focus-inner {
   padding: 0;
   width: 90px;
   height: 110px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .mfp-arrow:active {
@@ -209,7 +214,7 @@ button::-moz-focus-inner {
   opacity: 1;
 }
 
-.mfp-arrow:before {
+.mfp-arrow:before, .mfp-arrow:after {
   content: '';
   display: block;
   width: 0;
@@ -223,16 +228,6 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 35px;
-  margin-left: 35px;
-  border: medium inset transparent;
   border-top-width: 13px;
   border-bottom-width: 13px;
   top: 8px;
@@ -305,6 +300,7 @@ button::-moz-focus-inner {
   background: #000;
 }
 
+/* Main image in popup */
 img.mfp-img {
   width: auto;
   max-width: 100%;
@@ -317,6 +313,7 @@ img.mfp-img {
   margin: 0 auto;
 }
 
+/* The shadow behind the image */
 .mfp-figure {
   line-height: 0;
 }
@@ -332,9 +329,9 @@ img.mfp-img {
   width: auto;
   height: auto;
   z-index: -1;
-  -webkit-box-shadow: 0 0 28px rgba(255, 255, 255, 0.05);
-          box-shadow: 0 0 28px rgba(255, 255, 255, 0.05);
-  background: #000;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #444;
 }
 
 .mfp-figure small {
@@ -374,6 +371,9 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /**
+       * Remove all paddings around the image on small screen
+       */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;
@@ -437,4 +437,4 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
-/*# sourceMappingURL=magnific-popup.css.map */
+/*# sourceMappingURL=main.css.map */

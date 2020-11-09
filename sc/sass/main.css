@@ -1,0 +1,261 @@
+@import url(x:\front-end\old-days-nostalgy\sc\libs\bootstrap-grid\bootstrap-grid.css);
+@font-face {
+  font-family: "Cambria";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Cambria/CambriaMath.eot");
+  src: url("../fonts/Cambria/CambriaMath.eot?#iefix") format("embedded-opentype"), url("../fonts/Cambria/CambriaMath.woff") format("woff"), url("../fonts/Cambria/CambriaMath.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SegoePrint";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SegoePrint/SegoePrint.eot");
+  src: url("../fonts/SegoePrint/SegoePrint.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoePrint/SegoePrint.woff") format("woff"), url("../fonts/SegoePrint/SegoePrint.ttf") format("truetype");
+}
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url(../img/bg.jpeg);
+  background-size: cover;
+  min-height: 950px;
+  background-color: #571010;
+  background-attachment: fixed;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: "SegoePrint", sans-serif;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  padding-top: 20px;
+  background-color: rgba(9, 9, 9, 0.73);
+  margin-bottom: 3%;
+}
+
+header .logoWrapper img {
+  width: 100px;
+}
+
+header h1 {
+  opacity: .7;
+  margin: 15px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.simpleCalc {
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  background-color: #2a2a2a;
+  margin: auto;
+  width: 370px;
+  height: 521px;
+  border-radius: 60px;
+  border: #000;
+}
+
+.simpleCalc img {
+  height: 42px;
+}
+
+.scoreboard {
+  font-family: "Cambria",sans-serif;
+  text-align: right;
+  margin-top: 15px;
+  width: 315px;
+  height: 80.5px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scoreboard .desk {
+  width: 280px;
+  margin: auto;
+  height: 45%;
+  font-size: 1.18em;
+  letter-spacing: 2px;
+  color: #777777;
+  overflow: hidden;
+}
+
+.scoreboard .calcIn {
+  margin-top: -10px;
+  margin-left: 20px;
+  text-align: right;
+  width: 280px;
+  font-size: 2.5em;
+  overflow: hidden;
+}
+
+.button {
+  outline: none;
+  background-color: #ebebeb;
+  margin-right: 8px;
+  margin-left: 9px;
+  border-radius: 1000px;
+  border: 2px solid #000;
+  margin-top: 14px;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+  position: relative;
+  color: #571010;
+  font-family: "Cambria", sans-serif;
+  font-size: 1.575em;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #d82828;
+}
+
+.button:active {
+  background-color: #6c6c6c;
+  color: #ebebeb;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.delBtn {
+  font-size: 1.2em;
+}
+
+.bigButtonC {
+  height: 112px;
+  top: -15px;
+}
+
+.bigButtonPlus {
+  height: 112px;
+  top: -68px;
+}
+
+.topBtn {
+  top: -47px;
+}
+
+.secLineBtn {
+  left: 32px;
+  top: -76px;
+}
+
+.thirdLineBtn {
+  top: -72px;
+}
+
+.fourthLineBtn {
+  top: -100px;
+}
+
+.bottomLineBtn {
+  top: -129px;
+  left: -30px;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}
+/*# sourceMappingURL=main.css.map */
